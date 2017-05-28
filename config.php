@@ -8,7 +8,7 @@ global $config;
 $config = array();
 
 if (ENVIROMENT == "development") {
-    $config['dbname'] = 'galeria';
+    $config['dbname'] = 'paulofrancaweb';
     $config['dbhost'] = 'localhost';
     $config['dbuser'] = 'root';
     $config['dbpass'] = '';
@@ -17,5 +17,5 @@ if (ENVIROMENT == "development") {
     $config['dbname'] = 'paulofra_site';
     $config['dbhost'] = 'localhost';
     $config['dbuser'] = 'paulofra_root';
-    $config['dbpass'] = 'Ardamaz45!';
+    $config['dbpass'] = '*******';
 }
