@@ -2,7 +2,7 @@
 
 require './enviroment.php';
 
-define('BASE_URL', "http://paulofrancaweb.com.br/");
+define('BASE_URL', "http://paulofrancaweb.com.br");
 
 global $config;
 $config = array();

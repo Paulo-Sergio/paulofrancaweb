@@ -2,7 +2,7 @@
     <!-- banner -->
     <div class="banner">
         <!--Slider-->
-        <img src="<?= BASE_URL ?>assets/images/perfil_thumb.jpg" alt="" width="250" class="img-responsive">
+        <img src="<?= BASE_URL ?>/assets/images/perfil_thumb.jpg" alt="" width="250" class="img-responsive">
         <h2>Eu sou Paulo França</h2>
         <span>Programador / Desenvolvedor Web</span>
         <div class="callbacks_container">
@@ -81,7 +81,7 @@
         <div class="w3l-grids-about">
             <div class="col-md-5 w3ls-ab-right">
                 <div class="agile-about-right-img">
-                    <img src="<?= BASE_URL ?>assets/images/perfil.jpg" alt="">
+                    <img src="<?= BASE_URL ?>/assets/images/perfil.jpg" alt="">
                 </div>
             </div>
             <div class="col-md-7 w3ls-agile-left">
@@ -279,24 +279,24 @@
         <div class="agileits_portfolio_grids">
             <div class="col-md-4 agileits_portfolio_grid">
                 <div class="agileinfo_portfolio_grid hovereffect">
-                    <a class="cm-overlay" href="<?= BASE_URL ?>assets/images/1.jpg">
-                        <img src="<?= BASE_URL ?>assets/images/1.jpg" alt=" " class="img-responsive">
+                    <a class="cm-overlay" href="<?= BASE_URL ?>/assets/images/1.jpg">
+                        <img src="<?= BASE_URL ?>/assets/images/1.jpg" alt=" " class="img-responsive">
                         <div class="overlay">
                             <h4>Classy Resume</h4>
                         </div>
                     </a>
                 </div>
                 <div class="agileinfo_portfolio_grid hovereffect">
-                    <a class="cm-overlay" href="<?= BASE_URL ?>assets/images/2.jpg">
-                        <img src="<?= BASE_URL ?>assets/images/2.jpg" alt=" " class="img-responsive">
+                    <a class="cm-overlay" href="<?= BASE_URL ?>/assets/images/2.jpg">
+                        <img src="<?= BASE_URL ?>/assets/images/2.jpg" alt=" " class="img-responsive">
                         <div class="overlay">
                             <h4>Classy Resume</h4>
                         </div>
                     </a>
                 </div>
                 <div class="agileinfo_portfolio_grid hovereffect">
-                    <a class="cm-overlay" href="<?= BASE_URL ?>assets/images/3.jpg">
-                        <img src="<?= BASE_URL ?>assets/images/3.jpg" alt=" " class="img-responsive">
+                    <a class="cm-overlay" href="<?= BASE_URL ?>/assets/images/3.jpg">
+                        <img src="<?= BASE_URL ?>/assets/images/3.jpg" alt=" " class="img-responsive">
                         <div class="overlay">
                             <h4>Classy Resume</h4>
                         </div>
@@ -305,24 +305,24 @@
             </div>
             <div class="col-md-4 agileits_portfolio_grid">
                 <div class="agileinfo_portfolio_grid hovereffect">
-                    <a class="cm-overlay" href="<?= BASE_URL ?>assets/images/4.jpg">
-                        <img src="<?= BASE_URL ?>assets/images/4.jpg" alt=" " class="img-responsive">
+                    <a class="cm-overlay" href="<?= BASE_URL ?>/assets/images/4.jpg">
+                        <img src="<?= BASE_URL ?>/assets/images/4.jpg" alt=" " class="img-responsive">
                         <div class="overlay">
                             <h4>Classy Resume</h4>
                         </div>
                     </a>
                 </div>
                 <div class="agileinfo_portfolio_grid hovereffect">
-                    <a class="cm-overlay" href="<?= BASE_URL ?>assets/images/5.jpg">
-                        <img src="<?= BASE_URL ?>assets/images/5.jpg" alt=" " class="img-responsive">
+                    <a class="cm-overlay" href="<?= BASE_URL ?>/assets/images/5.jpg">
+                        <img src="<?= BASE_URL ?>/assets/images/5.jpg" alt=" " class="img-responsive">
                         <div class="overlay">
                             <h4>Classy Resume</h4>
                         </div>
                     </a>
                 </div>
                 <div class="agileinfo_portfolio_grid hovereffect">
-                    <a class="cm-overlay" href="<?= BASE_URL ?>assets/images/6.jpg">
-                        <img src="<?= BASE_URL ?>assets/images/6.jpg" alt=" " class="img-responsive">
+                    <a class="cm-overlay" href="<?= BASE_URL ?>/assets/images/6.jpg">
+                        <img src="<?= BASE_URL ?>/assets/images/6.jpg" alt=" " class="img-responsive">
                         <div class="overlay">
                             <h4>Classy Resume</h4>
 
@@ -332,24 +332,24 @@
             </div>
             <div class="col-md-4 agileits_portfolio_grid">
                 <div class="agileinfo_portfolio_grid hovereffect">
-                    <a class="cm-overlay" href="<?= BASE_URL ?>assets/images/7.jpg">
-                        <img src="<?= BASE_URL ?>assets/images/7.jpg" alt=" " class="img-responsive">
+                    <a class="cm-overlay" href="<?= BASE_URL ?>/assets/images/7.jpg">
+                        <img src="<?= BASE_URL ?>/assets/images/7.jpg" alt=" " class="img-responsive">
                         <div class="overlay">
                             <h4>Classy Resume</h4>
                         </div>
                     </a>
                 </div>
                 <div class="agileinfo_portfolio_grid hovereffect">
-                    <a class="cm-overlay" href="<?= BASE_URL ?>assets/images/8.jpg">
-                        <img src="<?= BASE_URL ?>assets/images/8.jpg" alt=" " class="img-responsive">
+                    <a class="cm-overlay" href="<?= BASE_URL ?>/assets/images/8.jpg">
+                        <img src="<?= BASE_URL ?>/assets/images/8.jpg" alt=" " class="img-responsive">
                         <div class="overlay">
                             <h4>Classy Resume</h4>
                         </div>
                     </a>
                 </div>
                 <div class="agileinfo_portfolio_grid hovereffect">
-                    <a class="cm-overlay" href="<?= BASE_URL ?>assets/images/9.jpg">
-                        <img src="<?= BASE_URL ?>assets/images/9.jpg" alt=" " class="img-responsive">
+                    <a class="cm-overlay" href="<?= BASE_URL ?>/assets/images/9.jpg">
+                        <img src="<?= BASE_URL ?>/assets/images/9.jpg" alt=" " class="img-responsive">
                         <div class="overlay">
                             <h4>Classy Resume</h4>
                         </div>
