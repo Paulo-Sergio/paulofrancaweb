@@ -5,8 +5,9 @@
         <!-- for-mobile-apps -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="keywords" content="Classy Resume Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-              Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+        <meta name="keywords" content="Desenvolvimento, Desenvolvedor Web, Paulo Franca, Paulo Franca Web, paulofrancaweb, criacao de sites,
+              sites, webdesign, designer, web, developer, webdeveloper, desenvolvedor, programador, programming, recife, jaboatão dos guararapes,
+              wordpress, html, css, javascript, java, curriculo, programação, profissional, programador profissional, paulo franca" />
         <!-- //for-mobile-apps -->
         <link href="<?= BASE_URL ?>/assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
         <link href="<?= BASE_URL ?>/assets/css/style.css" rel="stylesheet" type="text/css" media="all" />

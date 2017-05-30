@@ -103,7 +103,7 @@
                 </div>
                 <div class="w3ls-agile-left-info">
                     <h4>Endereço de E-mail</h4>
-                    <p><a href="mailto:paulofranca.contato@gmail.com">paulofranca.contato@gmail.com</a></p>
+                    <p><a href="mailto:contato@paulofrancaweb.com.br">contato@paulofrancaweb.com.br</a></p>
                 </div>
             </div>
             <div class="clearfix"> </div>
@@ -533,7 +533,7 @@
                     </div>
                     <div class="w3ls_footer_grid_leftr">
                         <h4>E-mail</h4>
-                        <a href="mailto:paulofranca.contato@gmail.com">paulofranca.contato@gmail.com</a>
+                        <a href="mailto:contato@paulofrancaweb.com.br">contato@paulofrancaweb.com.br</a>
                     </div>
                     <div class="clearfix"> </div>
                 </div>
