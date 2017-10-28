@@ -99,7 +99,7 @@
         </div>
         <div class="w3ls-agile-left-info">
           <h4>Endereço</h4>
-          <p>R. Rosa Amélia da Paz, 251, Recife - PE</p>
+          <p>R. José Nunes da Cunha, 251, Recife - PE</p>
         </div>
         <div class="w3ls-agile-left-info">
           <h4>Endereço de E-mail</h4>
@@ -122,19 +122,19 @@
 
       <div class="col-md-4 list-gds text-center">
         <i class="fa fa-cog" aria-hidden="true"></i>
-        <h4>Porque me escolher.</h4>
+        <h4>Porque me escolher</h4>
         <p>Com minha experiência vivida em grandes empresas, 
           tenho certeza de que poderei atender seus requisitos voltados para projetos de desenvolvimento de sistemas.</p>
       </div>
       <div class="col-md-4 list-gds text-center">
         <i class="fa fa-laptop" aria-hidden="true"></i>
-        <h4>O que eu faço.</h4>
-        <p>Desenvolvo Sistemas Desktops e Web, API's, Aplicativos para dispositivo moveis.
-          Tambem faço manutenção e analise de desempenho em sistemas já desenvolvidos.</p>
+        <h4>O que eu faço</h4>
+        <p>Desenvolvo Sistemas Desktops e Web, API's, Aplicativos para dispositivo móveis.
+          Também faço manutenção e análise de desempenho em sistemas já desenvolvidos.</p>
       </div>
       <div class="col-md-4 list-gds text-center">
         <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-        <h4>Minha missão.</h4>
+        <h4>Minha missão</h4>
         <p>Minha missão é que no final de um projeto, o meu cliente fique satisfeito por ter me escolhido
           e já pode contar comigo para o próximo projeto.</p>
       </div>
@@ -421,46 +421,46 @@
       <?php foreach ($galeria as $g) : ?>
 
         <div class="col-sm-6 col-md-4 isotope-item web-design">
-          <div class="image-box">
-            <div class="overlay-container">
-              <img class="img-responsive" src="<?= BASE_URL . $g['url_img_thumb'] ?>" alt="">
-              <a class="overlay" data-toggle="modal" data-target="#project-<?= $g['id'] ?>">
-                <i class="fa fa-search-plus"></i>
-                <span>Web Design</span>
-              </a>
-            </div>
-            <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-<?= $g['id'] ?>"><?= $g['titulo'] ?></a>
-          </div>
-          <!-- Modal -->
-          <div class="modal fade" id="project-<?= $g['id'] ?>" tabindex="-1" role="dialog" aria-labelledby="project-<?= $g['id'] ?>-label" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                  <h3 class="modal-title" id="project-<?= $g['id'] ?>-label">Projeto - <?= $g['titulo'] ?></h3>
-                </div>
-                <div class="modal-body">
-                  <h3>Descrição do Projeto</h3>
-                  <div class="row">
-                    <div class="col-md-5">
-                      <?= $g['descricao'] ?>
-                      <?php if (!empty($g['link_externo'])) : ?>
-                        <hr>
-                        <a href="<?= $g['link_externo'] ?>" target="_blank" class="">Acessar Site</a>
-                      <?php endif; ?>
-                    </div>
-                    <div class="col-md-7">
-                      <img class="img-responsive" src="<?= BASE_URL . $g['url_img'] ?>" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Fechar</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Modal end -->
+  	<div class="image-box">
+  	  <div class="overlay-container">
+  	    <img class="img-responsive" src="<?= BASE_URL . $g['url_img_thumb'] ?>" alt="">
+  	    <a class="overlay" data-toggle="modal" data-target="#project-<?= $g['id'] ?>">
+  	      <i class="fa fa-search-plus"></i>
+  	      <span>Web Design</span>
+  	    </a>
+  	  </div>
+  	  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-<?= $g['id'] ?>"><?= $g['titulo'] ?></a>
+  	</div>
+  	<!-- Modal -->
+  	<div class="modal fade" id="project-<?= $g['id'] ?>" tabindex="-1" role="dialog" aria-labelledby="project-<?= $g['id'] ?>-label" aria-hidden="true">
+  	  <div class="modal-dialog modal-lg">
+  	    <div class="modal-content">
+  	      <div class="modal-header">
+  		<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+  		<h3 class="modal-title" id="project-<?= $g['id'] ?>-label">Projeto - <?= $g['titulo'] ?></h3>
+  	      </div>
+  	      <div class="modal-body">
+  		<h3>Descrição do Projeto</h3>
+  		<div class="row">
+  		  <div class="col-md-5">
+		      <?= $g['descricao'] ?>
+		      <?php if (!empty($g['link_externo'])) : ?>
+    		    <hr>
+    		    <a href="<?= $g['link_externo'] ?>" target="_blank" class="">Acessar Site</a>
+		      <?php endif; ?>
+  		  </div>
+  		  <div class="col-md-7">
+  		    <img class="img-responsive" src="<?= BASE_URL . $g['url_img'] ?>" alt="">
+  		  </div>
+  		</div>
+  	      </div>
+  	      <div class="modal-footer">
+  		<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Fechar</button>
+  	      </div>
+  	    </div>
+  	  </div>
+  	</div>
+  	<!-- Modal end -->
         </div>
 
       <?php endforeach; ?>
@@ -524,22 +524,22 @@
     <h3 class="w3l_head w3l_head1">Entre em contato</h3>
     <p class="w3ls_head_para w3ls_head_para1">me envie uma mensagem</p>
     <div class="w3_mail_grids">
-      <form action="#" method="post">
+      <form action="<?= BASE_URL ?>/home/mail" method="post">
         <div class="col-md-6 w3_agile_mail_grid">
           <span class="input input--ichiro">
-            <input class="input__field input__field--ichiro" type="text" id="input-25" placeholder=" " required="">
+            <input class="input__field input__field--ichiro" type="text" id="input-25" name="nome" placeholder=" ">
             <label class="input__label input__label--ichiro" for="input-25">
               <span class="input__label-content input__label-content--ichiro">Seu nome</span>
             </label>
           </span>
           <span class="input input--ichiro">
-            <input class="input__field input__field--ichiro" type="email" id="input-26" placeholder=" " required="">
+            <input class="input__field input__field--ichiro" type="email" id="input-26" name="email" placeholder=" ">
             <label class="input__label input__label--ichiro" for="input-26">
               <span class="input__label-content input__label-content--ichiro">Seu e-mail</span>
             </label>
           </span>
           <span class="input input--ichiro">
-            <input class="input__field input__field--ichiro" type="text" id="input-27" placeholder=" " required="">
+            <input class="input__field input__field--ichiro" type="text" id="input-27" name="telefone" placeholder=" ">
             <label class="input__label input__label--ichiro" for="input-27">
               <span class="input__label-content input__label-content--ichiro">Seu número de telefone</span>
             </label>
@@ -547,7 +547,7 @@
 
         </div>
         <div class="col-md-6 w3_agile_mail_grid">
-          <textarea name="Message" placeholder="Sua Mensagem" required=""></textarea>
+          <textarea name="mensagem" placeholder="Sua Mensagem"></textarea>
           <input type="submit" value="Enviar">
         </div>
         <div class="clearfix"> </div>
