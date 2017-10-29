@@ -523,8 +523,13 @@
   <div class="container">
     <h3 class="w3l_head w3l_head1">Entre em contato</h3>
     <p class="w3ls_head_para w3ls_head_para1">me envie uma mensagem</p>
+    <?php if ($msg != null): ?>
+      <div class="alert alert-success">
+        <p><?= $msg ?></p>
+      </div>
+    <?php endif; ?>
     <div class="w3_mail_grids">
-      <form action="<?= BASE_URL ?>/home/mail" method="post">
+      <form action="<?= BASE_URL ?>/home/enviaEmail" method="post">
         <div class="col-md-6 w3_agile_mail_grid">
           <span class="input input--ichiro">
             <input class="input__field input__field--ichiro" type="text" id="input-25" name="nome" placeholder=" ">
@@ -544,7 +549,6 @@
               <span class="input__label-content input__label-content--ichiro">Seu número de telefone</span>
             </label>
           </span>
-
         </div>
         <div class="col-md-6 w3_agile_mail_grid">
           <textarea name="mensagem" placeholder="Sua Mensagem"></textarea>

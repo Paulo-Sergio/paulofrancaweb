@@ -1,5 +1,8 @@
 <?php
+
+require './vendor/autoload.php';
 require './config.php';
+
 /**
  * CONFIGURANDO AUTO-LOAD 
  */
