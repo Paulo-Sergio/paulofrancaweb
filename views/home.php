@@ -421,46 +421,46 @@
       <?php foreach ($galeria as $g) : ?>
 
         <div class="col-sm-6 col-md-4 isotope-item web-design">
-  	<div class="image-box">
-  	  <div class="overlay-container">
-  	    <img class="img-responsive" src="<?= BASE_URL . $g['url_img_thumb'] ?>" alt="">
-  	    <a class="overlay" data-toggle="modal" data-target="#project-<?= $g['id'] ?>">
-  	      <i class="fa fa-search-plus"></i>
-  	      <span>Web Design</span>
-  	    </a>
-  	  </div>
-  	  <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-<?= $g['id'] ?>"><?= $g['titulo'] ?></a>
-  	</div>
-  	<!-- Modal -->
-  	<div class="modal fade" id="project-<?= $g['id'] ?>" tabindex="-1" role="dialog" aria-labelledby="project-<?= $g['id'] ?>-label" aria-hidden="true">
-  	  <div class="modal-dialog modal-lg">
-  	    <div class="modal-content">
-  	      <div class="modal-header">
-  		<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-  		<h3 class="modal-title" id="project-<?= $g['id'] ?>-label">Projeto - <?= $g['titulo'] ?></h3>
-  	      </div>
-  	      <div class="modal-body">
-  		<h3>Descrição do Projeto</h3>
-  		<div class="row">
-  		  <div class="col-md-5">
-		      <?= $g['descricao'] ?>
-		      <?php if (!empty($g['link_externo'])) : ?>
-    		    <hr>
-    		    <a href="<?= $g['link_externo'] ?>" target="_blank" class="">Acessar Site</a>
-		      <?php endif; ?>
-  		  </div>
-  		  <div class="col-md-7">
-  		    <img class="img-responsive" src="<?= BASE_URL . $g['url_img'] ?>" alt="">
-  		  </div>
-  		</div>
-  	      </div>
-  	      <div class="modal-footer">
-  		<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Fechar</button>
-  	      </div>
-  	    </div>
-  	  </div>
-  	</div>
-  	<!-- Modal end -->
+          <div class="image-box">
+            <div class="overlay-container">
+              <img class="img-responsive" src="<?= BASE_URL . $g['url_img_thumb'] ?>" alt="">
+              <a class="overlay" data-toggle="modal" data-target="#project-<?= $g['id'] ?>">
+                <i class="fa fa-search-plus"></i>
+                <span>Web Design</span>
+              </a>
+            </div>
+            <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-<?= $g['id'] ?>"><?= $g['titulo'] ?></a>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="project-<?= $g['id'] ?>" tabindex="-1" role="dialog" aria-labelledby="project-<?= $g['id'] ?>-label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <h3 class="modal-title" id="project-<?= $g['id'] ?>-label">Projeto - <?= $g['titulo'] ?></h3>
+                </div>
+                <div class="modal-body">
+                  <h3>Descrição do Projeto</h3>
+                  <div class="row">
+                    <div class="col-md-5">
+                      <?= $g['descricao'] ?>
+                      <?php if (!empty($g['link_externo'])) : ?>
+                        <hr>
+                        <a href="<?= $g['link_externo'] ?>" target="_blank" class="">Acessar Site</a>
+                      <?php endif; ?>
+                    </div>
+                    <div class="col-md-7">
+                      <img class="img-responsive" src="<?= BASE_URL . $g['url_img'] ?>" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal end -->
         </div>
 
       <?php endforeach; ?>
@@ -523,13 +523,18 @@
   <div class="container">
     <h3 class="w3l_head w3l_head1">Entre em contato</h3>
     <p class="w3ls_head_para w3ls_head_para1">me envie uma mensagem</p>
-    <?php if ($msg != null): ?>
+    <?php if ($msg != null && $isEnviou): ?>
       <div class="alert alert-success">
+        <p><?= $msg ?></p>
+      </div>
+    <?php elseif ($msg != null && !$isEnviou): ?>
+      <div class="alert alert-warning">
         <p><?= $msg ?></p>
       </div>
     <?php endif; ?>
     <div class="w3_mail_grids">
-      <form action="<?= BASE_URL ?>/home/enviaEmail" method="post">
+      <!--<form action="<?= BASE_URL ?>/ajax/enviaEmail" method="post">-->
+      <form onsubmit="submitForm()">
         <div class="col-md-6 w3_agile_mail_grid">
           <span class="input input--ichiro">
             <input class="input__field input__field--ichiro" type="text" id="input-25" name="nome" placeholder=" ">

@@ -1,20 +1,9 @@
 <?php
 
-class HomeController extends Controller {
+class AjaxController extends Controller {
 
   public function index() {
-    $galeria = new Galeria();
-
-    // $dados['galeria'] = $galeria->getGaleria();
-    $dados = array(
-        'galeria' => $galeria->getGaleria()
-    );
-    $this->loadTemplate('home', $dados);
-  }
-
-  public function sobre() {
-    $dados = array();
-    $this->loadTemplate('sobre', $dados);
+    
   }
 
   public function enviaEmail() {
@@ -51,9 +40,8 @@ class HomeController extends Controller {
       $dados['msg'] = 'Desculpe, houve um problema. Tente novamente mais tarde!';
     }
 
-    $this->loadTemplate('home', $dados);
-    // header("Location: " . BASE_URL);
-    exit();
+    echo json_encode($dados);
+    //$this->loadTemplate('home', $dados);
   }
 
 }
