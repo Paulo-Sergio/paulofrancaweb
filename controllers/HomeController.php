@@ -22,14 +22,10 @@ class HomeController extends Controller {
     $dados['isEnviou'] = false;
 
     // recupera dados enviado pelo formulario
-    // obs: não aconcelhado user variaveis super globais diretamente. ex: $_POST['nome']
-    $dadosForm = filter_input_array(INPUT_POST, FILTER_DEFAULT);
-
-    // variaveis locais
-    $nome = $dadosForm['nome'];
-    $email = $dadosForm['email'];
-    $telefone = $dadosForm['telefone'];
-    $mensagem = $dadosForm['mensagem'];
+    $nome = addslashes($_POST['nome']);
+    $email = addslashes($_POST['email']);
+    $telefone = addslashes($_POST['telefone']);
+    $mensagem = addslashes($_POST['mensagem']);
 
     // instanciar a classe PHPMailer
     $mail = new PHPMailer();
@@ -51,9 +47,8 @@ class HomeController extends Controller {
       $dados['msg'] = 'Desculpe, houve um problema. Tente novamente mais tarde!';
     }
 
-    $this->loadTemplate('home', $dados);
-    // header("Location: " . BASE_URL);
-    exit();
+    echo json_encode($dados);
+    //$this->loadTemplate('home', $dados);
   }
 
 }

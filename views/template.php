@@ -20,14 +20,13 @@
     <!-- //font-awesome icons -->
     <link href="https://fonts.googleapis.com/css?family=Gidugu" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <!-- jquery -->
+    <script src="<?= BASE_URL ?>/assets/js/jquery-2.2.3.min.js"></script>
   </head>
   <body>
 
-
     <?php $this->loadViewInTemplate($viewName, $viewData) ?>
 
-    <!-- js -->
-    <script src="<?= BASE_URL ?>/assets/js/jquery-2.2.3.min.js"></script>
     <!-- bootstrap -->
     <script src="<?= BASE_URL ?>/assets/js/bootstrap.js"></script>
 

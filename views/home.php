@@ -518,23 +518,15 @@
 </div>
 <!--counter-->
 
+<div class="modal-loading"></div>
+
 <!-- mail -->
 <div class="mail" id="mail">
   <div class="container">
     <h3 class="w3l_head w3l_head1">Entre em contato</h3>
-    <p class="w3ls_head_para w3ls_head_para1">me envie uma mensagem</p>
-    <?php if ($msg != null && $isEnviou): ?>
-      <div class="alert alert-success">
-        <p><?= $msg ?></p>
-      </div>
-    <?php elseif ($msg != null && !$isEnviou): ?>
-      <div class="alert alert-warning">
-        <p><?= $msg ?></p>
-      </div>
-    <?php endif; ?>
+    <p class="w3ls_head_para w3ls_head_para1" id="confirmacao-envio">me envie uma mensagem</p>
     <div class="w3_mail_grids">
-      <!--<form action="<?= BASE_URL ?>/ajax/enviaEmail" method="post">-->
-      <form onsubmit="submitForm()">
+      <form id="meuForm" method="post">
         <div class="col-md-6 w3_agile_mail_grid">
           <span class="input input--ichiro">
             <input class="input__field input__field--ichiro" type="text" id="input-25" name="nome" placeholder=" ">
@@ -612,3 +604,8 @@
   </div>
 </div>
 <!-- //footer -->
+
+<script type="text/javascript">
+  var BASE_URL = "<?= BASE_URL ?>";
+</script>
+<script type="text/javascript" src="<?= BASE_URL ?>/assets/js/script.js"></script>
