@@ -34,7 +34,8 @@ class HomeController extends Controller {
     $mail->CharSet = "UTF-8";
 
     $mail->setFrom($email, $nome); // de quem veio o e-mail ?
-    $mail->addAddress("contato@paulofrancaweb.com.br", "paulofranca.contato@gmail.com"); // destinatario (eu recebendo)
+    $mail->addAddress("contato@paulofrancaweb.com.br"); // destinatario (eu recebendo)
+    $mail->addAddress("paulofranca.contato@gmail.com");
     $mail->isHTML(true);
     $mail->Subject = "Contato através do site - " . date("H:i") . " - " . date("d/m/Y");
     $mail->Body = '<h3>' . $mensagem . '</h3>';
