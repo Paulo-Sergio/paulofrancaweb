@@ -12,10 +12,10 @@ if (ENVIROMENT == "development") {
   $config['dbuser'] = 'root';
   $config['dbpass'] = '';
 } else {
-  define('BASE_URL', "https://paulofrancaweb.com.br");
+  define('BASE_URL', "http://paulofrancaweb.com.br");
   // $config para ambiente de produção
-  $config['dbname'] = 'paulofra_site';
+  $config['dbname'] = 'paulo231_site';
   $config['dbhost'] = 'localhost';
-  $config['dbuser'] = 'paulofra_root';
+  $config['dbuser'] = 'paulo231_root';
   $config['dbpass'] = '*******';
 }
